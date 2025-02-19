@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Comunidade</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+  <!-- Custom Styles -->
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+
+      align-items: center;
+      padding: 0;
+    }
+
+    /* Navbar */
+    .navbar-inverse {
+      background-color: #000000;
+      border: none;
+      border-radius: 0;
+    }
+
+    .navbar-inverse .navbar-brand {
+      color: #fff !important;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar-inverse .navbar-brand:hover {
+      color: #ffffff !important;
+    }
+
+    .navbar-inverse .navbar-nav>li>a {
+      color: #fff !important;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .navbar-inverse .navbar-nav>li>a:hover {
+      background-color: #df275e !important;
+      color: #9b0d0d !important;
+    }
+
+    /* Buttons */
+    .navbar-nav button {
+      background: none;
+      border: none;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .navbar-nav button:hover {
+      background-color: #979797;
+      color: #ffffff;
+      border-radius: 5px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #59A28D;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: #ce5353;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    #Primeira_foto {
+      display: block;
+      margin: 1 auto;
+      height: calc(10 * 100px); /* Ajusta para a altura de 5 barras vermelhas */
+      object-fit: cover;
+    width: 100%; /* Ajusta a largura */
+    object-position: top; /* Mostra o topo da imagem */
+
+
+
+    }
+    h1 {
+  color: #000000; /* Vermelho escuro */
+  font-family: "Fredoka", sans-serif;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+@font-face {
+  font-family: 'EMELIAN';
+  src: url('fonts/EMELIAN.otf') format('opentype'); /* Para .otf */
+  /* Se convertido para .woff ou .woff2 */
+  /* src: url('fonts/sua-fonte.woff2') format('woff2'),
+         url('fonts/sua-fonte.woff') format('woff'); */
+}
+  /* Estilo para os parágrafos */
+  h4 {
+    color: #444; /* Cinza escuro */
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 20px 10%;
+  }
+
+  /* Destaque para palavras importantes */
+  h4 strong {
+    color: #9b0d0d; /* Vermelho escuro */
+    font-weight: bold;
+  }
+
+  /* Linha decorativa para separação */
+  .decorative-line {
+    width: 80%;
+    height: 4px;
+    background: #3a3939;
+    margin: 20px auto;
+  }
+
+    /* Linha séria para separação */
+    .serious-line {
+    width: 100%;
+    height: 4px;
+    background: #000000;
+    margin: 20px auto;
+  }
+
+  #Contato
+  {
+    background-color: #797171;
+  }
+  
+  .caption {
+  height: 320px;
+  }
+  
+  </style>
+</head>
+
+<body>
+  <section id="Início">
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a  id="GICATVBAR" class="navbar-brand" style="text-decoration-color: #726d6d; font-family: 'EMELIAN';" href="#">Ice Creme comunitty</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><button onclick="location.href='#Início'">Início</button></li>
+          <li><button onclick="location.href='#Nossa_comunidade'">Nossa comunidade</button></li>
+          <li><button onclick="location.href='#Eventos'">eventos</button></li>
+          <li><button onclick="location.href='#Produtora'">Vende-se</button></li>
+          <li><button onclick="location.href='#Projetos'">Desenhos</button></li>
+          <li><button onclick="location.href='#Contato'">Criador da comunidade</button></li>
+        </ul>
+      </div>
+    </div>
+    <img id="Primeira_foto" src="Ice_creme.jpg" style = " size-adjust: auto;">
+  </nav>
+  </section>
+
+  <center>
+    <section id="Nossa_comunidade">
+    <h1>Nossa comunidade</h1>
+    <div class="decorative-line"></div>
+    <h4>
+    Oi, eu bernardo moreno, criador deste site agradeço muito <strong>você</strong> que está aqui lendo isso e vendo nossa comunidade, que foi feita inteiramente por mim, e vou explicar tudinho sobre este meu projeto.
+    </h4>
+    <h4>
+    Primeiramente, o que é essa comunidade? essa comunidade, foi uma ideia que eu tive, que envolve criar um sistema de diversão, tanto para alunos quanto pra professores da escola E.E.Maria Celeste Pereira Leite, claro, outras pessoas também podem participar da comunidade, só não poderão participar de alguns eventos. aqui, por uma quantia simples entre 1-5 reais, você pode compartilhar suas expêriencias, por exemplo, você pode me mandar 5 reais para eu poder colocar uma imagem do seu boletim no site, ou 2 para divulgar alguma venda que você quer fazer. Os eventos, são competições, rifas, ou até colaborações que envolvem prêmios, Exemplo: uma competição de desenho, que tem como prêmio, uma cartinha rara, ou uma rifa que para um kit com 3 revistinhas da turma da mônica, ou até mesmo se você quiser prestar algum serviço para ganhar alguma coisa. Dito tudo isso, aproveite a experiência :)<strong></strong>
+    </h4>
+  </section>
+
+  <br><br>    <div class="serious-line"></div> <br><br>
+
+  <section id="Eventos">
+    <h1>Eventos</h1>
+    <div class="decorative-line"></div>
+    <div class="container">
+<p>Não há eventos acontecendo agora, volte outro dia.</p>
+
+
+    <style>
+      .thumbnail img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+    
+      .thumbnail {
+        border: none;
+        padding: 0;
+        text-align: center;
+      }
+    
+      .thumbnail .caption {
+        padding: 15px;
+        background-color: #f8f8f8;
+        border-top: 2px solid #ce5353;
+        border-radius: 0 0 8px 8px;
+      }
+    
+      .thumbnail h3 {
+        font-family: "Fredoka", sans-serif;
+        color: #9b0d0d;
+      }
+    
+      .thumbnail p {
+        color: #444;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    
+    </style>
+  </section>
+  <br><br>    <div class="serious-line"></div> <br><br>
+  <section id="Produtora">
+    <h1>Vende-se</h1>
+
+    <p>
+      não há nenhum produto a venda no momento, volte mais tarde.
+    </p>
+    <button id="openPopup">Como funciona</button>
+
+    <div id="popup" class="popup">
+        <button id="closePopup" class="close-btn">X</button>
+        <img src="Image.jpg" alt="Imagem do pop-up">
+    </div>
+    <style>
+      button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do pop-up */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.popup img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.close-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.close-btn:hover {
+    background-color: darkred;
+}
+
+    </style>
+    <script>
+      document.getElementById("openPopup").addEventListener("click", function () {
+          document.getElementById("popup").style.display = "block";
+      });
+  
+      document.getElementById("closePopup").addEventListener("click", function () {
+          document.getElementById("popup").style.display = "none";
+      });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </section>
+  <section id="Projetos">
+
+    <style>
+        .card-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .card-custom {
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .profile-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: gray;
+            margin: 0 auto 10px;
+        }
+
+    </style>
+
+  <br><br>    <div class="serious-line"></div> <br><br>
+  <h1>Desenhos</h1><br><br>
+<p>aqui ficam os melhores desenhos da galera da comunidade, para colocar o seu desenho aqui, mande uma mensagem para o criador da comunidade (+55 11 97192-1783) com a foto do seu desenho, seu nome, o nome do desenho, e uma descrição dele. feito isso o seu desenho será avaliado e se for escolhido, ele aparecerá aqui, Boa sorte ;)</p>
+
+    <style>
+#profile-pic1 {
+    width: 100px;  /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+    background-image: url('2.png'); /* Caminho da imagem */
+    background-size: cover; /* Ajusta a imagem ao tamanho da div */
+    background-position: center; /* Centraliza a imagem */
+    border-radius: 50%; /* Deixa a imagem redonda */
+}
+#profile-pic2 {
+    width: 100px;  /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+    background-image: url('Logotexto.jpg'); /* Caminho da imagem */
+    background-size: cover; /* Ajusta a imagem ao tamanho da div */
+    background-position: center; /* Centraliza a imagem */
+    border-radius: 50%; /* Deixa a imagem redonda */
+}
+
+
+    </style>
+  </section>
+  <br><br><br><br>
+  <section id="Contato">
+    <br><br><br>
+    <h1 id="blanco">Criador</h1>
+    <div class="container">
+
+      <div class="contact">
+        <img id="dynamicImage" src="image1.jpg" alt="Imagem" class="image-container">
+          <h2 class="name" style=" color: #ffffff;  font-family: 'Fredoka', sans-serif; font-style: normal; font-variation-settings: 'wdth' 100;">Bernardo Moreno</h2>
+          <h2 class="name" style=" color: #ffffff;  font-family: 'Fredoka', sans-serif; font-style: normal; font-variation-settings: 'wdth' 100;">número: +55 11 97192-1783</h2>
+          <h2 class="name" style=" color: #ffffff;  font-family: 'Fredoka', sans-serif; font-style: normal; font-variation-settings: 'wdth' 100;">Instagram: https://www.instagram.com/asaventurasdobe/ </h2>
+      </div>
+<style>
+.image-container {
+    width: 250px; /* Largura maior para ocupar o espaço */
+    height: 200px; /* Altura maior */
+    object-fit: cover; /* Mantém a proporção sem distorcer */
+    border-radius: 10px; /* Deixa as bordas arredondadas (opcional) */
+    cursor: pointer;
+    display: block;
+    margin: auto; /* Centraliza a imagem */
+    border: 2px solid black; /* Apenas para visualização */
+}
+
+  </style>
+  <script>
+    document.getElementById("dynamicImage").addEventListener("click", function () {
+        this.src = this.src.includes("image1.jpg") ? "image2.jpg" : "image1.jpg";
+    });
+</script>
+
+</div>
+<h4 style="color: white;">Agora, neste exato momento que eu estou escrevendo este texto, a comunidade ainda está em fase inicial, é um prazer criar uma comunidade para que muitas pessoas possam se divertir, ainda pretento implementar várias coisas para que isso se torne extremamente divertido para todos, se você aí, que está lendo, tiver alguma ideia que queira que seja adicionada aqui, fique avontade para me mandar uma mensagem com sua ideia, participem, brinquem, compartilhem esta comunidade com seus amigos, por que eu sei que pouco a pouco, nossa comunidade irá crescer (clique na minha imagem para ficar um pouco mais engraçado ´-´)</h4>
+  <style>
+    .card {
+    width: 350px;
+    background-color: #f6f3e7; /* Fundo bege claro */
+    padding: 20px;
+   /* border-radius: 8px; */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #995858; /* Borda */
+}
+
+#blanco
+{
+  color: #f6f3e7;
+}
+.contact {
+    margin-bottom: 20px;
+}
+
+.contact:last-child {
+    margin-bottom: 0;
+}
+
+.name {
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    color: #2e2e2e;
+    margin-bottom: 5px;
+}
+
+.phone,
+.email {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #4d4d4d;
+}
+
+.phone {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.thumbnail .caption h3 {
+  font-size: 20px;
+  color: #000000; /* Vermelho escuro */
+  font-weight: bold;
+}
+
+.thumbnail .caption p {
+  font-size: 14px;
+  color: #444; /* Cinza escuro */
+  line-height: 1.6;
+}
+    </style>
+
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 ICE_CREME_COMUNITY. Todos os direitos reservados. | Desenvolvido por <a href="https://www.instagram.com/asaventurasdobe/">Bernardo Moreno</a></p>
+</footer>
+
+<!-- Scripts do Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</section>
+</center>
+</body>
+</html>
